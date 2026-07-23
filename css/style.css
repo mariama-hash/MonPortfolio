@@ -852,10 +852,9 @@ footer {
   font-weight: 500;
 }
 
-.design-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: 18px;
+.design-grid{
+  columns: 300px;
+  column-gap: 18px;
 }
 
 .design-item {
@@ -867,6 +866,7 @@ footer {
   align-items: center;
   justify-content: center;
   transition: transform .3s ease, opacity .3s ease, border-color .3s ease;
+  break-inside: avoid; margin-bottom: 18px;
 }
 
 .design-item:hover {
