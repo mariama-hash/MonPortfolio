@@ -859,12 +859,20 @@ footer {
 }
 
 .design-item {
-  aspect-ratio: 9/16;
   border-radius: 10px;
   overflow: hidden;
-  transition: transform .3s ease, opacity .3s ease;
+  background: var(--navy-800);
+  border: 1px solid rgba(139,92,246,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform .3s ease, opacity .3s ease, border-color .3s ease;
 }
 
+.design-item:hover {
+  transform: translateY(-6px);
+  border-color: rgba(139,92,246,0.35);
+}
 .design-item.hidden {
   display: none;
 }
@@ -887,10 +895,8 @@ footer {
 
 .design-img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
   display: block;
-  transition: transform .3s ease;
 }
 
 .design-item:hover .design-img {
