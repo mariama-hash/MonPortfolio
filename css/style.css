@@ -1003,6 +1003,12 @@ footer {
   border-radius: 10px;
   overflow: hidden;
 }
+.handball-img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
 
 /* ---------- CONTACT extras ---------- */
 .contact-secondary {
